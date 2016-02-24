@@ -4,7 +4,6 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.france',
-  'myApp.version',
   'myApp.carteFrance'
 ]).
 config(['$routeProvider', function($routeProvider) {
