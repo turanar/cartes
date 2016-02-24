@@ -12,10 +12,10 @@ directive('carteFrance', ['d3Promise', function(d3Promise) {
 		var isFrance = false;
 		if(scope.region === undefined || scope.region == "") {
     		isFrance = true;
-    		var url = "/files/france.topo.json";
+    		var url = "./files/france.topo.json";
     		d3.select('#backBtn').attr('style', 'display:none');
     	} else {
-    		var url = "/files/regions/region-" + scope.region + ".topo.json";
+    		var url = "./files/regions/region-" + scope.region + ".topo.json";
     		d3.select('#backBtn').attr('style', '');
     	}
     	var width = scope.width, height = scope.height;
